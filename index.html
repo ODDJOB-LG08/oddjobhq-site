@@ -2,29 +2,155 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Odd-Job Logistics</title>
-  <link rel="stylesheet" href="style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Roboto', sans-serif;
+      color: #2b2b2b;
+      background-color: #f9f9f9;
+    }
+    header {
+      background: linear-gradient(135deg, #ffcc00, #333333);
+      color: white;
+      padding: 2rem;
+      text-align: center;
+    }
+    nav {
+      display: flex;
+      justify-content: center;
+      background: #333;
+      padding: 0.75rem;
+    }
+    nav a {
+      color: white;
+      text-decoration: none;
+      margin: 0 1rem;
+      font-weight: bold;
+    }
+    .section {
+      padding: 2rem;
+      max-width: 1000px;
+      margin: auto;
+    }
+    .section ul {
+      list-style-type: none;
+      padding-left: 0;
+    }
+    .section li::before {
+      content: '✔';
+      color: #ffcc00;
+      margin-right: 0.5rem;
+    }
+    .quote-btn {
+      display: inline-block;
+      margin-top: 1rem;
+      padding: 0.75rem 1.5rem;
+      background: #333;
+      color: white;
+      text-decoration: none;
+      border-radius: 4px;
+    }
+    footer {
+      text-align: center;
+      padding: 1rem;
+      background: #333;
+      color: white;
+      font-size: 0.9rem;
+    }
+  </style>
 </head>
 <body>
   <header>
     <h1>Odd-Job Logistics</h1>
+    <p>Multi-Service Precision for Property & Project Needs</p>
   </header>
   <nav>
-    <a href="index.html">Home</a>
-    <a href="line-striping.html">Line Striping</a>
-    <a href="solar-services.html">Solar</a>
-    <a href="lawn-care.html">Lawn</a>
-    <a href="gutter-cleaning.html">Gutters</a>
-    <a href="electrical.html">Electrical</a>
-    <a href="party-delivery.html">Delivery</a>
+    <a href="#striping">Line Striping</a>
+    <a href="#solar">Solar</a>
+    <a href="#lawn">Lawn</a>
+    <a href="#gutter">Gutter Cleaning</a>
+    <a href="#electrical">Electrical</a>
+    <a href="#delivery">Party Delivery</a>
+    <a href="#contact">Contact</a>
   </nav>
-  <div class="content">
-    <img src="https://via.placeholder.com/1200x300?text=Welcome+to+Odd-Job+HQ" alt="Odd-Job Logistics image">
-    <h2>Choose a Service:</h2><ul><li><a href='solar-services.html'>Solar Services</a></li><li><a href='line-striping.html'>Line Striping</a></li><li><a href='lawn-care.html'>Lawn Care</a></li><li><a href='gutter-cleaning.html'>Gutter Cleaning</a></li><li><a href='electrical.html'>Electrical</a></li><li><a href='party-delivery.html'>Party Delivery</a></li></ul>
-  </div>
+
+  <section class="section" id="striping">
+    <h2>Line Striping Services</h2>
+    <ul>
+      <li>Parking Lot Striping</li>
+      <li>Warehouse & Industrial Floor Markings</li>
+      <li>ADA Compliance Symbols</li>
+      <li>Custom Lettering & Stenciling</li>
+      <li>Re-striping & Surface Renewal</li>
+    </ul>
+    <a href="#contact" class="quote-btn">Request a Quote</a>
+  </section>
+
+  <section class="section" id="solar">
+    <h2>Solar Panel Services</h2>
+    <ul>
+      <li>Installation – $2.50 per watt (Labor only, materials not included)</li>
+      <li>Cleaning & Efficiency Maintenance</li>
+      <li>Removal & Safe Disposal</li>
+    </ul>
+    <a href="#contact" class="quote-btn">Request a Solar Estimate</a>
+  </section>
+
+  <section class="section" id="lawn">
+    <h2>Lawn Care Services</h2>
+    <ul>
+      <li>Mowing & Edging</li>
+      <li>Yard Maintenance</li>
+      <li>Weed & Leaf Removal</li>
+    </ul>
+    <a href="#contact" class="quote-btn">Request Lawn Services</a>
+  </section>
+
+  <section class="section" id="gutter">
+    <h2>Gutter Cleaning</h2>
+    <ul>
+      <li>Cleaning of Gutters & Downspouts</li>
+      <li>Removal of Debris</li>
+      <li>Basic Repairs Available</li>
+    </ul>
+    <a href="#contact" class="quote-btn">Request Gutter Service</a>
+  </section>
+
+  <section class="section" id="electrical">
+    <h2>Minor Electrical Work</h2>
+    <ul>
+      <li>Ceiling Fan Installation</li>
+      <li>Light Fixture & Switch Replacement</li>
+      <li>Outlet Repair & Upgrades</li>
+    </ul>
+    <a href="#contact" class="quote-btn">Request Electrical Work</a>
+  </section>
+
+  <section class="section" id="delivery">
+    <h2>Party Equipment Delivery</h2>
+    <ul>
+      <li>Tables & Folding Chairs Delivery</li>
+      <li>Drop-Off & Pickup Scheduling</li>
+      <li>Quick Setup (Optional)</li>
+    </ul>
+    <a href="#contact" class="quote-btn">Request Delivery</a>
+  </section>
+
+  <section class="section" id="contact">
+    <h2>Request a Quote</h2>
+    <form action="mailto:info@oddjoblogistics.com" method="post" enctype="text/plain">
+      <input type="text" name="Name" placeholder="Your Name" required /><br>
+      <input type="email" name="Email" placeholder="Your Email" required /><br>
+      <textarea name="Message" rows="4" placeholder="Describe your project or service request" required></textarea><br>
+      <button type="submit">Send Request</button>
+    </form>
+  </section>
+
   <footer>
-    Contact: info@oddjoblogistics.com | (708) 304-8696
+    &copy; 2025 Odd-Job Logistics | info@oddjoblogistics.com | (708) 304-8696
   </footer>
 </body>
 </html>
