@@ -1,17 +1,31 @@
-<!DOCTYPE html><html><head><link rel="manifest" href="manifest.json">
-<script>
-  if ('serviceWorker' in navigator) {
-    navigator.serviceWorker.register('/service-worker.js');
-  }
-</script>
- <!-- Google tag (gtag.js) -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-RVXQ0CR2YW"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
 
-  gtag('config', 'G-RVXQ0CR2YW');
-</script>
- <title>Contact</title><link rel='stylesheet' href='style.css'></head><body><h1>Contact Us</h1><p>Email: info@oddjoblogistics.com<br>Phone: (708) 304-8696</p></body></html
-                                                                                                                                                                       >
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Contact - Odd-Job HQ</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <h1>Contact Odd-Job HQ</h1>
+  </header>
+  <main>
+    <section>
+      <p>Need a reliable team for your next project?</p>
+      <p>Email: <a href="mailto:info@oddjoblogistics.com">info@oddjoblogistics.com</a></p>
+      <p>Phone: (708) 304-8696</p>
+      <p>Address: 2501 Chatham Rd, Ste R, Springfield, IL 62704</p>
+      <h2>Send Us a Message</h2>
+      <form name="contact" method="POST" data-netlify="true">
+        <input type="hidden" name="form-name" value="contact">
+        <p><label>Your Name: <input type="text" name="name" required></label></p>
+        <p><label>Your Email: <input type="email" name="email" required></label></p>
+        <p><label>Message: <textarea name="message" required></textarea></label></p>
+        <p><button type="submit">Send</button></p>
+      </form>
+    </section>
+  </main>
+</body>
+</html>
