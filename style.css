@@ -1,30 +1,54 @@
 
 body {
-  font-family: Arial, sans-serif;
-  padding: 20px;
-  background-color: #f4f4f4;
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background: #f2f2f2;
+    color: #333;
 }
-header {
-  background: #333;
-  color: #fff;
-  padding: 10px;
+header.hero {
+    background-color: #004466;
+    color: white;
+    padding: 20px;
+    text-align: center;
+}
+header.hero img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 12px;
+}
+nav {
+    background: #333;
+    padding: 10px;
+    text-align: center;
+}
+nav a {
+    color: white;
+    text-decoration: none;
+    margin: 0 10px;
 }
 form {
-  background: #fff;
-  padding: 15px;
-  border-radius: 5px;
+    background: #fff;
+    padding: 20px;
+    max-width: 400px;
+    margin: auto;
+    border-radius: 8px;
 }
 input, textarea {
-  width: 100%;
-  margin-top: 5px;
-  margin-bottom: 15px;
-  padding: 8px;
-  border: 1px solid #ccc;
+    width: 100%;
+    padding: 8px;
+    margin-top: 10px;
 }
 button {
-  padding: 10px 15px;
-  background: #28a745;
-  color: white;
-  border: none;
-  cursor: pointer;
+    padding: 10px 20px;
+    background: #004466;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+footer {
+    background: #222;
+    color: #fff;
+    padding: 10px;
+    text-align: center;
 }
