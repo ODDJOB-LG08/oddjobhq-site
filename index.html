@@ -1,145 +1,30 @@
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Odd-Job Logistics | Line Striping Services</title>
-  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
-  <style>
-    body {
-      margin: 0;
-      font-family: 'Roboto', sans-serif;
-      color: #2b2b2b;
-      background-color: #f9f9f9;
-    }
-    header {
-      background: linear-gradient(135deg, #ffcc00, #333333);
-      color: white;
-      padding: 2rem;
-      text-align: center;
-    }
-    header h1 {
-      margin: 0;
-      font-size: 2.5rem;
-    }
-    header p {
-      margin-top: 0.5rem;
-      font-style: italic;
-      font-size: 1.2rem;
-    }
-    .section {
-      padding: 2rem;
-      max-width: 1000px;
-      margin: auto;
-    }
-    .services ul {
-      list-style-type: none;
-      padding-left: 0;
-    }
-    .services li::before {
-      content: '✔';
-      color: #ffcc00;
-      margin-right: 0.5rem;
-    }
-    .features {
-      display: flex;
-      flex-wrap: wrap;
-      gap: 1rem;
-    }
-    .feature-box {
-      flex: 1;
-      min-width: 200px;
-      background: white;
-      border-left: 5px solid #ffcc00;
-      box-shadow: 0 2px 5px rgba(0,0,0,0.1);
-      padding: 1rem;
-      border-radius: 5px;
-    }
-    .pricing, .contact {
-      background: #ffffff;
-      border-radius: 8px;
-      padding: 2rem;
-      margin-top: 2rem;
-      box-shadow: 0 0 10px rgba(0,0,0,0.05);
-    }
-    .contact form {
-      display: flex;
-      flex-direction: column;
-    }
-    .contact input, .contact textarea {
-      margin-bottom: 1rem;
-      padding: 0.75rem;
-      border: 1px solid #ccc;
-      border-radius: 4px;
-    }
-    .contact button {
-      padding: 0.75rem;
-      background: #333333;
-      color: white;
-      border: none;
-      border-radius: 4px;
-      font-weight: bold;
-      cursor: pointer;
-    }
-    footer {
-      text-align: center;
-      padding: 1rem;
-      background: #333;
-      color: white;
-      font-size: 0.9rem;
-    }
-  </style>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Odd-Job Logistics</title>
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
   <header>
     <h1>Odd-Job Logistics</h1>
-    <p>Precision Pavement Striping. Reliable Results.</p>
   </header>
-
-  <div class="section services">
-    <h2>Our Services</h2>
-    <ul>
-      <li>Parking Lot Striping</li>
-      <li>Warehouse & Industrial Floor Markings</li>
-      <li>ADA Compliance Symbols</li>
-      <li>Custom Lettering & Stenciling</li>
-      <li>Re-striping & Surface Renewal</li>
-    </ul>
+  <nav>
+    <a href="index.html">Home</a>
+    <a href="line-striping.html">Line Striping</a>
+    <a href="solar-services.html">Solar</a>
+    <a href="lawn-care.html">Lawn</a>
+    <a href="gutter-cleaning.html">Gutters</a>
+    <a href="electrical.html">Electrical</a>
+    <a href="party-delivery.html">Delivery</a>
+  </nav>
+  <div class="content">
+    <img src="https://via.placeholder.com/1200x300?text=Welcome+to+Odd-Job+HQ" alt="Odd-Job Logistics image">
+    <h2>Choose a Service:</h2><ul><li><a href='solar-services.html'>Solar Services</a></li><li><a href='line-striping.html'>Line Striping</a></li><li><a href='lawn-care.html'>Lawn Care</a></li><li><a href='gutter-cleaning.html'>Gutter Cleaning</a></li><li><a href='electrical.html'>Electrical</a></li><li><a href='party-delivery.html'>Party Delivery</a></li></ul>
   </div>
-
-  <div class="section features">
-    <div class="feature-box">
-      <h3>Experienced Crews</h3>
-      <p>We understand the needs of commercial, municipal, and industrial clients across Chicago.</p>
-    </div>
-    <div class="feature-box">
-      <h3>Fast Turnarounds</h3>
-      <p>Minimized downtime, maximum precision. We work around your schedule.</p>
-    </div>
-    <div class="feature-box">
-      <h3>ADA & Code Compliance</h3>
-      <p>Every job meets or exceeds local and federal regulations.</p>
-    </div>
-  </div>
-
-  <div class="section pricing">
-    <h2>Sample Pricing</h2>
-    <p>Starting as low as <strong>$0.20 per linear foot</strong>. Custom layouts available upon request.</p>
-  </div>
-
-  <div class="section contact">
-    <h2>Request a Quote</h2>
-    <form action="mailto:info@oddjoblogistics.com" method="post" enctype="text/plain">
-      <input type="text" name="Name" placeholder="Your Name" required />
-      <input type="email" name="Email" placeholder="Your Email" required />
-      <textarea name="Message" rows="4" placeholder="Describe your project" required></textarea>
-      <button type="submit">Send Request</button>
-    </form>
-  </div>
-
   <footer>
-    &copy; 2025 Odd-Job Logistics | Chicago, IL | info@oddjoblogistics.com | (708) 304-8696
+    Contact: info@oddjoblogistics.com | (708) 304-8696
   </footer>
 </body>
 </html>
