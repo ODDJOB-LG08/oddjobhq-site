@@ -1,119 +1,30 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Odd-Job Logistics</title>
+  <meta charset="UTF-8">
+  <title>Odd-Job HQ</title>
   <link rel="stylesheet" href="style.css">
-  <style>
-    body {
-      margin: 0;
-      font-family: Arial, sans-serif;
-      background: #f4f4f4;
-      color: #222;
-    }
-    header {
-      background: url('https://via.placeholder.com/1600x400?text=Odd-Job+HQ') no-repeat center center/cover;
-      height: 300px;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      color: white;
-      text-shadow: 2px 2px 8px #000;
-      animation: fadeIn 2s ease-out;
-    }
-    header h1 {
-      font-size: 3rem;
-      margin: 0;
-    }
-    nav {
-      background: #333;
-      padding: 0.75rem;
-      text-align: center;
-    }
-    nav a {
-      color: white;
-      text-decoration: none;
-      margin: 0 1rem;
-      font-weight: bold;
-      transition: color 0.3s ease;
-    }
-    nav a:hover {
-      color: #ffcc00;
-    }
-    .services {
-      display: flex;
-      flex-wrap: wrap;
-      justify-content: center;
-      padding: 2rem;
-    }
-    .card {
-      background: white;
-      margin: 1rem;
-      padding: 1rem;
-      border-radius: 10px;
-      width: 250px;
-      box-shadow: 0 2px 8px rgba(0,0,0,0.1);
-      transition: transform 0.3s ease;
-      animation: slideUp 1s ease forwards;
-    }
-    .card:hover {
-      transform: translateY(-5px);
-    }
-    .card img {
-      width: 100%;
-      border-radius: 8px;
-    }
-    .card h3 {
-      margin: 0.5rem 0;
-    }
-    footer {
-      text-align: center;
-      padding: 1rem;
-      background: #222;
-      color: white;
-    }
-    @keyframes fadeIn {
-      from { opacity: 0; transform: translateY(-20px); }
-      to { opacity: 1; transform: translateY(0); }
-    }
-    @keyframes slideUp {
-      from { opacity: 0; transform: translateY(40px); }
-      to { opacity: 1; transform: translateY(0); }
-    }
-  </style>
 </head>
 <body>
   <header>
-    <h1>Odd-Job Logistics</h1>
+    <h1>Welcome to Odd-Job HQ</h1>
+    <nav>
+      <a href="index.html">Home</a>
+      <a href="line-striping.html">Line Striping</a>
+      <a href="solar-services.html">Solar</a>
+      <a href="lawn-care.html">Lawn</a>
+      <a href="gutter-cleaning.html">Gutters</a>
+      <a href="electrical.html">Electrical</a>
+      <a href="party-delivery.html">Delivery</a>
+      <a href="contact.html">Contact</a>
+    </nav>
   </header>
-  <nav>
-    <a href="index.html">Home</a>
-    <a href="solar-services.html">Solar</a>
-    <a href="#">Lawn</a>
-    <a href="#">Gutters</a>
-    <a href="#">Electrical</a>
-    <a href="#">Delivery</a>
-  </nav>
-  <section class="services">
-    <div class="card">
-      <img src="https://via.placeholder.com/250x150?text=Solar+Service" alt="Solar">
-      <h3>Solar Services</h3>
-      <p>Install, clean & remove panels. Efficient, safe, professional.</p>
-    </div>
-    <div class="card">
-      <img src="https://via.placeholder.com/250x150?text=Lawn+Care" alt="Lawn">
-      <h3>Lawn Maintenance</h3>
-      <p>Mowing, edging, cleanup — keep your yard sharp year-round.</p>
-    </div>
-    <div class="card">
-      <img src="https://via.placeholder.com/250x150?text=Electrical" alt="Electrical">
-      <h3>Electrical</h3>
-      <p>Ceiling fans, switches, fixtures & more. Minor, safe work.</p>
-    </div>
-  </section>
+  <main>
+    <img src="images/hero-home.jpg" alt="Odd-Job crew at work">
+    <p>Odd-Job Logistics provides a diverse array of services tailored to simplify your life — all under one dependable brand.</p>
+  </main>
   <footer>
-    Contact us: info@oddjoblogistics.com | (708) 304-8696
+    <p>Contact: info@oddjoblogistics.com | (708) 304-8696</p>
   </footer>
 </body>
 </html>
